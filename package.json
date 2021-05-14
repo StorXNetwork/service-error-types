@@ -1,16 +1,17 @@
 {
   "name": "storj-service-error-types",
   "version": "1.5.0",
-  "description": "common error types for various storj services",
+  "description": "common error types for various Storx services",
   "main": "index.js",
   "scripts": {
     "test": "npm run testsuite && npm run linter",
     "linter": "./node_modules/.bin/jshint --config .jshintrc ./index.js ./test",
-    "testsuite": "./node_modules/.bin/_mocha test/**/*.js"
+    "testsuite": "./node_modules/.bin/_mocha test/**/*.js",
+    "coverage": "npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Storj/service-error-types.git"
+    "url": "git+https://github.com/StorXNetwork/service-error-types.git"
   },
   "keywords": [
     "storj",
@@ -21,13 +22,13 @@
   "author": "Gordon Hall <gordon@storj.io>",
   "license": "LGPL-3.0",
   "bugs": {
-    "url": "https://github.com/Storj/service-error-types/issues"
+    "url": "https://github.com/StorXNetwork/service-error-types/issues"
   },
-  "homepage": "https://github.com/Storj/service-error-types#readme",
+  "homepage": "https://github.com/StorXNetwork/service-error-types#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^4.2.0",
     "jshint": "^2.9.3",
-    "mocha": "^3.0.2",
-    "sinon": "^1.17.6"
+    "mocha": "^8.2.0",
+    "sinon": "^9.2.1"
   }
 }
